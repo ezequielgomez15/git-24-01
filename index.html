@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK DE BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- link de mi css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- estructura de grillas de bootstrap -->
+    <!-- 3 partes fundamentales a la hora de crearla -->
+    <!-- PASO 1: etiqueta de bloque/contenedora/padre la voy a tener que llamar con la class container o container-fluid -->
+
+    <!-- PASO 2: etiqueta item/hijo la voy a tener que llamar con la clase row -->
+
+    <!-- PASO 3: etiqueta interna de los items (row) la  voy a tener que llamar con la clase col -->
+    <header class="container">
+        <div class="row">
+            <h1 class="col-4">LOGO</h1>
+            <nav class="navbar navbar-expand-lg  col-8 tomato-bg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="google.com">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <img class="col-sm-6 col-md-3"  src="https://cdn-icons-png.flaticon.com/512/711/711897.png" alt="">
+            <p class="col-sm-6 col-md-9">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat cumque cupiditate nemo eius rerum ipsam voluptas neque vitae voluptates, quos dolorem, ratione voluptatibus labore sapiente animi illum reiciendis. Provident, explicabo.
+            </p>
+        </div>
+
+        <div class="row mt-3">
+            <img class="col-3" src="https://cdn-icons-png.flaticon.com/512/711/711897.png" alt="">
+            <p class="col-9">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat cumque cupiditate nemo eius rerum ipsam voluptas neque vitae voluptates, quos dolorem, ratione voluptatibus labore sapiente animi illum reiciendis. Provident, explicabo.
+            </p>
+        </div>
+    </main>
+    <!-- scrip de bootsrapt -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
